@@ -1,0 +1,123 @@
+@import 'variables'; // Import the variables file
+
+
+* {
+    margin: 0;
+}
+
+body {
+   
+}
+
+header {
+    background-color: gray;
+    padding: 2rem;
+}
+
+.hero {
+    max-width: $container-width;
+    margin: 0 auto;
+    display: flex;
+    padding: 3rem 0rem;
+    gap: 2rem;
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4rem;
+
+        #title {
+            font-size: 40px;
+
+        }
+
+        #subtitle {
+            font-size: 24px;
+        }
+    }
+
+    &__img {
+        padding: 4rem 0rem;
+        &__container {
+
+            width: 650px;
+            display: flex;
+
+            img {
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+.carousel-logo {
+    // max-width: $container-width;
+    margin: 0 auto;
+
+
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        display: flex;
+        overflow: hidden;
+
+        .logo-container {
+            display: flex;
+            background-color: darkblue;
+            padding: 0.2rem;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                color: white;
+            }
+            
+            img {
+                object-fit: contain;
+                width: 30%;
+            }
+        }
+    }
+}
+
+.our-services {
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: 5rem 0rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    &__container {
+
+        display: flex;
+        gap: 6rem;
+
+        .column {
+            // width: 60%;
+            display: flex;
+            flex-direction: column;
+            // padding: 2rem 0rem;
+            gap: 1rem;
+
+            p {
+                line-height: 30px;
+            }
+            // padding: 2rem 0rem;
+        }
+    }
+
+    #services-title {
+        font-size: 30px;
+    }
+}
+
+footer{
+    // position: relative;
+    // bottom: 0;
+    background-color: gray;
+    padding: 2rem;
+}
